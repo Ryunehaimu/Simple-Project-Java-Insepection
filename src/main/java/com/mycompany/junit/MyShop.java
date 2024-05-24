@@ -16,8 +16,40 @@ public class MyShop {
 
         for (int i = 0; i < itemPrices.length; i++) {
             if (itemPrices[i] < 500 && maxItemDisc > 0) {
-            total += (itemPrices[i] * (1 - discount));
-            maxItemDisc--;
+                total += (itemPrices[i] * (1 - discount));
+                maxItemDisc--;
+            } else {
+                total += itemPrices[i];
+            }
+        }
+        return total;
+    }
+
+    public double price(double[] itemPrices) {
+        int maxItemDisc = 3;
+        double discount = 0.2;
+        double total = 0;
+
+        for (int i = 0; i < itemPrices.length; i++) {
+            if (itemPrices[i] < 500 && maxItemDisc > 0) {
+                total += (itemPrices[i] * (1 - discount));
+                maxItemDisc--;
+            } else {
+                total += itemPrices[i];
+            }
+        }
+        return total;
+    }
+
+    public double price1(double[] itemPrices) {
+        int maxItemDisc = 3;
+        double discount = 0.2;
+        double total = 0;
+
+        for (int i = 0; i < itemPrices.length; i++) {
+            if (itemPrices[i] < 500 && maxItemDisc > 0) {
+                total += (itemPrices[i] * (1 - discount));
+                maxItemDisc--;
             } else {
                 total += itemPrices[i];
             }
