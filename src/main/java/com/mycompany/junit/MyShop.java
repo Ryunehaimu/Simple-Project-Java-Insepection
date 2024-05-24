@@ -9,6 +9,7 @@ package com.mycompany.junit;
  * @author deder
  */
 public class MyShop {
+    // suksess
     public double priceCalc(double[] itemPrices) {
         int maxItemDisc = 3;
         double discount = 0.2;
@@ -16,8 +17,8 @@ public class MyShop {
 
         for (int i = 0; i < itemPrices.length; i++) {
             if (itemPrices[i] < 500 && maxItemDisc > 0) {
-            total += (itemPrices[i] * (1 - discount));
-            maxItemDisc--;
+                total += (itemPrices[i] * (1 - discount));
+                maxItemDisc--;
             } else {
                 total += itemPrices[i];
             }
