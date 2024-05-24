@@ -25,10 +25,19 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/Ryunehaimu/Simple-Project-Java-Insepection</url>
+    </repository>
+  </distributionManagement>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <exec.mainClass>com.mycompany.junit.JUNIT</exec.mainClass>
+        <sonar.organization>ryunehaimu</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 </project>
