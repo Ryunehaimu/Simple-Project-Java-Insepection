@@ -9,7 +9,7 @@ package com.mycompany.junit;
  * @author deder
  */
 public class JUNIT {
-
+//test failed
     public static void main(String[] args) {
         // Membuat objek MyShop
         MyShop shop = new MyShop();
